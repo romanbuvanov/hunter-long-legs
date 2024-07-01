@@ -1,35 +1,62 @@
-/* :root {
-    --bg-color: #151015ea;
-    --bg-color-solid: #151015;
-    --txt-color: #eee;
-    --txt-color-dark: #bbb;
-    --url-color: #fab;
-    --url-color-visited: #c8a;
-    --light-border-color: #fff6;
-    --dark-pink: #867;
-    --dark-green: #676;
-    --table-bg-header: #0009;
-    --table-bg: #0005;
-    --edit-url-color: #c9b;
-    --toc-bg-color: #0002;
-    --toc-num-color: #aaa;
-    --leftnavbar-url-color: #fef;
-    --leftnavbar-header-color: #ddd;
-    --header-bg-color: #12101250;
-    --header-tab-bg: linear-gradient(#302530da,#151015da);
-    --header-tab-color: #eee;
-    --embed-bg: #171017b0;
-    --diff-delete: #955;
-    --diff-add: #595;
-} */
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
+  height: 2000px;
   background: #151015ea;
-  background-image: url(./images/bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   color: #eee;
 }
+
+header {
+  position: relative;
+  height: 150px;
+  background: linear-gradient(
+    90deg,
+    rgba(21, 0, 36, 1) 0%,
+    rgba(76, 43, 103, 1) 48%,
+    rgba(210, 129, 146, 1) 100%
+  );
+}
+
+.logo {
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: cen;
+}
+header ul li {
+  margin-top: 60px;
+}
+header ul li a {
+  font-size: 24px;
+  color: azure;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header ul li a:hover {
+  color: #fab;
+  text-shadow: 4px 3px 5px #fab, -4px -3px 5px #fab;
+}
+
+.about-section {
+  height: 900px;
+  padding: 40px;
+  background-image: url(./images/bg1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 h1 {
   font-family: quicksand, sans-serif;
   font-weight: 500;
@@ -43,6 +70,19 @@ h1 {
   text-align: center;
   padding: 5px;
   margin-bottom: 30px;
+}
+
+.division {
+  height: 1px;
+  opacity: 0.5;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: -1px 10px 34px 50px rgba(255, 255, 255, 0.84);
+}
+.hunter-section {
+  height: 900px;
+  background-image: url(./images/bg2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .pink-wrapper {
@@ -60,4 +100,7 @@ h1 {
   border: 2px solid #fab;
   border-radius: 1em;
   padding: 0em 0.5em;
+}
+footer p {
+  text-align: center;
 }
