@@ -95,6 +95,30 @@ h1 {
   margin-bottom: 30px;
 }
 
+.click-btn {
+  display: block;
+  width: 130px;
+  height: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding: up right down left; */
+  padding: 5px 10px 5px 10px;
+  text-transform: uppercase;
+  border-radius: 50%;
+  border: 5px dashed #99858c;
+  font-weight: 900;
+  font-size: 20px;
+  text-align: center;
+}
+
+.click-btn:hover {
+  color: #5c1023;
+  text-shadow: 2px 2px 7px #92113c;
+  transform: scale(0.95);
+  font-size: 18px;
+  border: 5px dashed #69102f;
+}
+
 .hll-wrapper {
   background-color: rgba(255, 170, 187, 0.4);
   max-width: fit-content;
@@ -147,4 +171,25 @@ footer p {
   top: 0;
   right: 0;
   height: 150px;
+}
+
+/* ======Counter Page=========== */
+.main-page-link {
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.main-page-link:hover {
+  color: #92113c;
+}
+.counter {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.btn-wrapper {
+  display: flex;
 }
